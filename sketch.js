@@ -28,7 +28,7 @@ function mouseClicked(){
 
 function draw() {
   if (buttonPressed == true){
-    index =int(random(6));
+    index =int(random(7));
     text(usPresidents[index].name+", "+usPresidents[index].year + ", " +usPresidents[index].party,mouseX,mouseY);
    buttonPressed = false;
   }
