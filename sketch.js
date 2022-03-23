@@ -21,6 +21,14 @@ function setup() {
   //index =int(random(5));
   console.log(index);
   mouseClicked(buttonPressed);
+square(110, 180, 185);
+triangle(70, 180, 330, 180, 200, 75);
+fill(0, 0, 255)
+square(120, 190, 50);
+square(240, 190, 50);
+fill(53, 0, 0)
+rect(180, 280, 50, 75);
+
 }
 function mouseClicked(){
   buttonPressed = true;
@@ -28,9 +36,8 @@ function mouseClicked(){
 
 function draw() {
   if (buttonPressed == true){
-    index =int(random(7));
+    index =int(random(6));
     text(usPresidents[index].name+", "+usPresidents[index].year + ", " +usPresidents[index].party,mouseX,mouseY);
    buttonPressed = false;
   }
 }
-
